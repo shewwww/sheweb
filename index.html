@@ -4,37 +4,122 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wat Da Hek Portfolio</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
-
   <body>
-    <header>
-      <div>shew</div>
-      <input type="checkbox" id="nav_check" hidden />
-      <nav>
-        <ul>
-          <li>
-            <a href="" class="active">Home</a>
-          </li>
-          <li>
-            <a href="">About</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
-          </li>
-          <li>
-            <a href="">Dahecc</a>
-          </li>
+    <nav class="test" id="desktop-nav">
+      <div class="logo">shew</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#project">project</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
-      </nav>
-      <label for="nav_check" class="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-      </label>
-    </header>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">shew</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">about</a></li>
+          <li><a href="#project" onclick="toggleMenu()">project</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- home -->
+    <div class="homeCont" id="home">
+      <div class="homeInfo">
+        <h1>Hello there! it's me shew :DD</h1>
+        <p>
+          I'm Sherwin Mendez a college student in Technological University of
+          the Philippines. A student who doesn't know what to do in his life,
+          exploring different paths.
+        </p>
+        <div class="buttonsCont">
+          <div class="btnHomeA">
+            <a href="#about">GET STARTED</a>
+          </div>
+          <div class="btnHomeB">
+            <a href="#contact">SUPPORT</a>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/images/shewpfpglasses.png" />
+    </div>
+
+    <!-- about -->
+    <div class="aboutCont" id="about">
+      <h1>About me</h1>
+      <div class="aboutInfoImg">
+        <div class="aboutContImg">
+          <div class="img-row1">
+            <img src="./assets/images/gitah.jpg" alt="" />
+            <img src="./assets/images/photography.jpg" alt="" />
+          </div>
+          <div class="img-row2">
+            <img src="./assets/images/beat.png" alt="" />
+            <img src="./assets/images/fishing shit.jpg" alt="" />
+          </div>
+        </div>
+        <div class="aboutInfo">
+          <p>
+            These are the things/hobbies that i'm into,
+            <br />
+            i'm exploring different fields and doing
+            <br />
+            extra curricular actvities such as, session guitarist, fishing,
+            <br />
+            photography and also by making a beat.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- project -->
+
+    <section id="secCont">
+      <div class="projCont" id="project">
+        <img src="./assets/images/WeatherAppProj.png" alt="" />
+        <img src="./assets/images/projBeat.png" alt="" />
+        <img src="./assets/images/projPho.jpg" alt="" />
+      </div>
+    </section>
+    <!-- contact -->
+
+    <div class="contactCont" id="contact">
+      <div class="contactImg">
+        <a href="https://github.com/shewwww"
+          ><img src="./assets/images/github.png" alt=""
+        /></a>
+        <a href="https://soundcloud.com/shew-458073153"
+          ><img src="./assets/images/soundcloud.png" alt=""
+        /></a>
+        <a href="https://www.youtube.com/channel/UCAPZ8mDcjvEHdLHDFxsekFQ"
+          ><img src="./assets/images/youtube.png" alt=""
+        /></a>
+        <a href="https://www.instagram.com/_shewewew/"
+          ><img src="./assets/images/instagram.png" alt=""
+        /></a>
+        <a href="https://www.facebook.com/sheeeew"
+          ><img src="./assets/images/facebook.png" alt=""
+        /></a>
+        <a href="./assets/images/CV.pdf"
+          ><img src="./assets/images/download.png" alt=""
+        /></a>
+      </div>
+      <h1>"All rights reserved" || sherwinmendez05@gmail.com</h1>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
